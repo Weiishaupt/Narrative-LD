@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+// using UnityEngine.UI;
 
 namespace DavidJalbert.LowPolyPeople
 {
     public class AnimationController : MonoBehaviour
     {
         public Animator[] characters;
-        public Text label;
+        // public Text label;
         public Material[] palettes;
         public Camera[] cameras;
 
@@ -32,7 +32,7 @@ namespace DavidJalbert.LowPolyPeople
 
         public void setAnimation(string tag)
         {
-            label.text = "Current animation: " + tag;
+          //  label.text = "Current animation: " + tag;
             foreach (Animator animator in characters) animator.SetTrigger(tag);
         }
 
